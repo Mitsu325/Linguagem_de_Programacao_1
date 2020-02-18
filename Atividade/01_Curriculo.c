@@ -9,7 +9,7 @@ int main () {
 	setLocale(LC_ALL, "Portuguese_Brazil");
 	
 	printf("\n\t------------------------------------------------------------\n");
-	printf("\t\t\t\t** Curriulo **");
+	printf("\t\t\t\t** Curriculo **");
 	printf("\n\t------------------------------------------------------------\n");
 	printf("\n\tNome: Patricia Mitsuko Mashiba");
 	printf("\n\tIdade: 22 anos");
