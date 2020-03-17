@@ -2,9 +2,9 @@
 
 #include<stdio.h>
 #include<math.h>
+#define PI 3.1415
 
 int main() {
-	const float PI = 3.1415;
 	float raio, area, perimetro;
 	system("cls");
 	
