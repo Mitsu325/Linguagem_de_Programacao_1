@@ -13,7 +13,7 @@ int main() {
 	printf("\n\tDigite o total de combust%cvel gasto em litros: ", 161);
 		scanf("%f", &litros);
 	
-	consumo = distancia / litros;
+	consumo = litros / distancia;
 	
 	printf("\n\tO consumo m%cdio %c %.2f\n", 130, 130, consumo);
 	
