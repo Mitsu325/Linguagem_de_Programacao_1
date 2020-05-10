@@ -10,8 +10,10 @@ int main() {
 	
 	printf("\n ----------*Programa calcula o quadrado do número*----------");
 	
-	printf("\n\n Digite um número natural: ");
-	scanf("%u", &n);
+	do{
+		printf("\n\n Digite um número natural: ");
+		scanf("%u", &n);
+	} while(n < 0);
 
 	while(cont < n) {
 		qua += impar;
