@@ -1,11 +1,14 @@
 /* Atividade 11 - Rodízio */
 
 #include<stdio.h>
+#include<locale.h>
 
 int main() {
+	setlocale(LC_ALL, "Portuguese");
+	
 	int placa, digito;
 	
-	printf("\n ----------*Programa informa o dia de rod%czio*----------", 161);
+	printf("\n ----------*Programa informa o dia de rodízio*----------");
 	
 	printf("\n\n Digite a placa: ");
 	scanf("%d", &placa);
@@ -17,7 +20,7 @@ int main() {
 		case 2: printf("\n Segunda\n");
 			break;
 		case 3: 
-		case 4: printf("\n Ter%ca\n", 135);
+		case 4: printf("\n Terça\n");
 			break;
 		case 5: 
 		case 6: printf("\n Quarta\n");
@@ -28,7 +31,7 @@ int main() {
 		case 9: 
 		case 0: printf("\n Sexta\n");
 			break;
-		default: printf("\n Placa inv%clida!! \n", 160);
+		default: printf("\n Placa inválida!! \n");
 	}
 	
 	system("pause");

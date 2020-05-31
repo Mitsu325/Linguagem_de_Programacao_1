@@ -3,19 +3,19 @@
 int fat(int n) {
 	int fat = 1;
 	
-	while(n > 1) {
-		fat *= n;
-		n--;
-	}
+	while(n > 1)
+		fat *= n--;
 	
 	return fat;
 }
 
 int main() {
-	int resultado = fat(4);
+	int n;
 	
-	printf("%d \n", resultado);
+	printf("\n\n Digite n: ");
+	scanf("%d", &n);
 	
-	system("pause");
+	printf("\n Fatorial de %d: %d \n", n, fat(n));
+	
 	return 0;
 }

@@ -12,7 +12,7 @@ int main() {
 	
 	do {
 		scanf("%d", &num);
-		soma = soma + num;	
+		soma += num;	
 	} while (num != 0);
 	
 	printf("\n Soma da sequencia: %d\n", soma);

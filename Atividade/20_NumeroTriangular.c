@@ -10,15 +10,13 @@ int main() {
 	
 	printf("\n ----------*Programa verifica número triangular*----------");
 	
-	do{
-		printf("\n\n Digite um número natural: ");
-		scanf("%u", &n);
-	} while(n < 0);
-
-	for(i=0; i<n; i++)
-		nt += (i+1);
+	printf("\n\n Digite n: ");
+	scanf("%u", &n);
 	
-	printf("\n\n O N-ésimo número triangular de %u é %u\n\n", n, nt);
+	while(n)
+		nt += n--; /* t=t+n >> n=n-1 */
+	
+	printf("\n\n O resultado é %u\n\n", nt);
 	
 	system("pause");
 	return 0;

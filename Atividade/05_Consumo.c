@@ -1,21 +1,25 @@
 /*Atividade 2.5 - Consumo de combustível*/
 
 #include <stdio.h>
+#include <locale.h>
 
 int main() {
-	float distancia, litros, consumo;
 	system("cls");
 	
-	printf("\n\n\t-------*Programa calcula o consumo m%cdio de combust%cvel*-------\n", 130, 161);
+	setlocale(LC_ALL, "Portuguese");
 	
-	printf("\n\tDigite a dist%cncia em quil%cmetros: ", 131, 147);
+	float distancia, litros, consumo;
+	
+	printf("\n\n -------*Programa calcula o consumo médio de combustível*-------\n");
+	
+	printf("\n Digite a distância em quilômetros: ");
 		scanf("%f", &distancia);
-	printf("\n\tDigite o total de combust%cvel gasto em litros: ", 161);
+	printf("\n Digite o total de combustível gasto em litros: ");
 		scanf("%f", &litros);
 	
 	consumo = litros / distancia;
 	
-	printf("\n\tO consumo m%cdio %c %.2f\n", 130, 130, consumo);
+	printf("\n O consumo médio é %.2f l/km \n", consumo);
 	
 	system("pause");
 	return 0;

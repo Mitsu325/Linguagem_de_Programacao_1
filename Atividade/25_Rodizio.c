@@ -1,9 +1,8 @@
 /* Atividade 25 */
 
 void rodizio(int placa) {
-	int digito = placa % 10;
 	
-	switch(digito) {
+	switch(placa % 10) {
 		case 1: 
 		case 2: printf("\n Segunda\n");
 			break;
@@ -24,7 +23,10 @@ void rodizio(int placa) {
 }
 
 int main() {
-	rodizio(2356);
-	system("pause");
+	int placa;
+	printf("\n\n Qual a placa do veiculo: ");
+	scanf ("%d", &placa);
+	rodizio(placa);
+	
 	return 0;
 }

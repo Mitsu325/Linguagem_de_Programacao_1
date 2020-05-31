@@ -1,14 +1,17 @@
 /*Atividade 7 - Operador Ternário*/
 #include<stdio.h>
+#include<locale.h>
 
 int main() {
+	setlocale(LC_ALL, "Portuguese");
+	
 	int n;
 	
-	printf("\n\n\t-------*Programa informa se n %c par ou %cmpar*-------\n", 130, 161);
-	printf("\n\tDigite o n%cmero: ", 163);
+	printf("\n\n -------*Programa informa se n é par ou ímpar*-------\n");
+	printf("\n  Digite o número: ");
 	scanf("%d", &n);
 	
-	printf("\n\tO n%cmero %c %s\n", 163, 130, n%2 ? "impar" : "par");
+	printf("\n  O número é %s\n", n%2 ? "impar" : "par");
 	
 	system("pause");
 	return 0;

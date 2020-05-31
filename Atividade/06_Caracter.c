@@ -1,19 +1,23 @@
 /*Atividade 2.5 - Caracter*/
 
 #include <stdio.h>
+#include <locale.h>
 
 int main() {
-	char caracter;
 	system("cls");
 	
-	printf("\n\n\t-------*Programa converte o caracter em c%cdigo ASCII*-------\n", 162);
+	setlocale(LC_ALL, "Portuguese");
 	
-	printf("\n\tDigite o caracter: ");
-		scanf("%c", &caracter);
+	char caracter;
 	
-	printf("\n\tOctal >>> %o", caracter);
-	printf("\n\tDecimal >>> %d", caracter);
-	printf("\n\tHexadecimal >>> %x\n", caracter);
+	printf("\n\n -------*Programa converte o caracter em código ASCII*-------\n");
+	
+	printf("\n Digite o caracter: ");
+	scanf("%c", &caracter);
+	
+	printf("\n Octal >>> %o", caracter);
+	printf("\n Decimal >>> %d", caracter);
+	printf("\n Hexadecimal >>> %x\n", caracter);
 	
 	system("Pause");
 	return 0;
