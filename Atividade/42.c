@@ -5,8 +5,8 @@
 void meuPuts(char s[]) {
 	int i = 0;
 	
-	while(s[i]!='\0') {
-		printf("%c", s[i]);
+	while(*(s+i) != '\0') {
+		printf("%c", *(s+i));
 		i++;
 	}
 	
